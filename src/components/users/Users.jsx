@@ -1,21 +1,21 @@
-import React from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
-import User from './User'
+import React from 'react';
+import { Route, Switch, Link } from 'react-router-dom';
+import User from '../user/User';
 
-const Users = ({ match }) => {
+const Users = () => {
   return (
     <div className="page__content">
       <h1>Users</h1>
       <ul className="navigation">
         <li className="navigation__item">
-          <Link to={`${match.url}/github`}>Github</Link>
+          <Link to={`/users/github`}>Github</Link>
         </li>
         <li className="navigation__item">
-          <Link to={`${match.url}/facebook`}>Facebook</Link>
+          <Link to={`/users/facebook`}>Facebook</Link>
         </li>
       </ul>
       <Switch>
-        <Route exact path={`${match.url}/:userId`}>
+        <Route exact path={`/users/:userId`}>
           <User />
         </Route>
         <Route>
@@ -23,6 +23,6 @@ const Users = ({ match }) => {
         </Route>
       </Switch>
     </div>
-  )
-}
-export default Users
+  );
+};
+export default Users;

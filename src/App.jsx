@@ -1,20 +1,14 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import Home from './Home'
-import Users from './Users'
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/home/Home';
+import Navigation from './components/navigation/Navigation';
+import Users from './components/users/Users';
 
 const App = () => {
   return (
     <div className="page">
       <Router>
-        <ul className="navigation">
-          <li className="navigation__item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="navigation__item">
-            <Link to="/users">Users</Link>
-          </li>
-        </ul>
+        <Navigation />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -23,6 +17,6 @@ const App = () => {
         </Switch>
       </Router>
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;
