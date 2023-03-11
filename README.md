@@ -1,4 +1,4 @@
-[Site link] (https://eclectic-monstera-d05182.netlify.app)
+[Site link](https://eclectic-monstera-d05182.netlify.app)
 
 The tech stack is:
 
