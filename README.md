@@ -7,6 +7,7 @@ The tech stack is:
 - BEM methodology
 - REACT lib
 - react-router-dom lib (version 5)
+* Webpack
 
 ## Installation
 
