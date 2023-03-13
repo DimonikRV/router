@@ -20,9 +20,7 @@ npm i
 
 ## Development
 
-Open your favorite Terminal and run these commands.
-
-First Tab:
+For development run:
 
 ```sh
 npm start
